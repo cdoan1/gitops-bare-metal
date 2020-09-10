@@ -35,7 +35,7 @@ spec:
 apiVersion: inventory.open-cluster-management.io/v1alpha1
 kind: BareMetalAsset
 metadata:
-  name: openshift-master-0-1
+  name: openshift-master-0-2
 spec:
   bmc:
     address: ipmi://192.168.123.1:6232
@@ -45,7 +45,7 @@ spec:
 apiVersion: inventory.open-cluster-management.io/v1alpha1
 kind: BareMetalAsset
 metadata:
-  name: openshift-master-0-1
+  name: openshift-worker-0-0
 spec:
   bmc:
     address: ipmi://192.168.123.1:6233
@@ -55,7 +55,7 @@ spec:
 apiVersion: inventory.open-cluster-management.io/v1alpha1
 kind: BareMetalAsset
 metadata:
-  name: openshift-master-0-1
+  name: openshift-worker-0-1
 spec:
   bmc:
     address: ipmi://192.168.123.1:6234
