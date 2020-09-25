@@ -1,0 +1,6 @@
+hostName,hostNamespace,bmcAddress,macAddress,role,username,password
+csv-f24-h27-000-r630-master-1-0,ocp-bm,ipmi://192.168.124.1:6235,52:54:00:f4:52:9a,master,admin,password
+csv-f24-h27-000-r630-master-1-1,ocp-bm,ipmi://192.168.124.1:6236,52:54:00:66:64:71,master,admin,password
+csv-f24-h27-000-r630-master-1-2,ocp-bm,ipmi://192.168.124.1:6237,52:54:00:57:6d:bd,master,admin,password
+csv-f24-h27-000-r630-worker-1-0,ocp-bm,ipmi://192.168.124.1:6238,52:54:00:7a:de:7a,worker,admin,password
+csv-f24-h27-000-r630-worker-1-1,ocp-bm,ipmi://192.168.124.1:6239,52:54:00:f7:41:28,worker,admin,password
