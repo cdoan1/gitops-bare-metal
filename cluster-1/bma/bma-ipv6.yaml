@@ -1,0 +1,63 @@
+#
+# Generated from: oc get cm cluster-config-v1 -n kube-system -o yaml
+# example BMA for a spoke cluster
+#
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ipv6-host-1000-bmc-secret
+type: Opaque
+data:
+  password: cGFzc3dvcmQ=
+  username: YWRtaW4=
+---
+apiVersion: inventory.open-cluster-management.io/v1alpha1
+kind: BareMetalAsset
+metadata:
+  name: openshift6-master-0-0
+spec:
+  bmc:
+    address: ipmi://[::FFFF:129.144.52.38]:6230
+    credentialsName: ipv6-host-1000-bmc-secret
+  bootMACAddress: "52:54:00:a0:5a:34"
+---
+apiVersion: inventory.open-cluster-management.io/v1alpha1
+kind: BareMetalAsset
+metadata:
+  name: openshift6-master-0-1
+spec:
+  bmc:
+    address: ipmi://[::FFFF:129.144.52.38]:6231
+    credentialsName: ipv6-host-1000-bmc-secret
+  bootMACAddress: "52:54:00:87:ad:0a"
+---
+apiVersion: inventory.open-cluster-management.io/v1alpha1
+kind: BareMetalAsset
+metadata:
+  name: openshift6-master-0-2
+spec:
+  bmc:
+    address: ipmi://[::FFFF:129.144.52.38]:6232
+    credentialsName: ipv6-host-1000-bmc-secret
+  bootMACAddress: "52:54:00:51:3e:aa"
+---
+apiVersion: inventory.open-cluster-management.io/v1alpha1
+kind: BareMetalAsset
+metadata:
+  name: openshift6-worker-0-0
+spec:
+  bmc:
+    address: ipmi://[::FFFF:129.144.52.38]:6233
+    credentialsName: ipv6-host-1000-bmc-secret
+  bootMACAddress: "52:54:00:2f:d6:3e"
+---
+apiVersion: inventory.open-cluster-management.io/v1alpha1
+kind: BareMetalAsset
+metadata:
+  name: openshift6-worker-0-1
+spec:
+  bmc:
+    address: ipmi://[::FFFF:129.144.52.38]:6234
+    credentialsName: ipv6-host-1000-bmc-secret
+  bootMACAddress: "52:54:00:76:ec:9f"
